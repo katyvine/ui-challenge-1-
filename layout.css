@@ -1,15 +1,23 @@
 
 .deck.flex-container{
-  display: flex;
-  flex-direction: row;
-  height: 190px;
+  /* display: flex;
+  flex-direction: row; */
+  float: right;
+  height: 250px;
 }
+
 div{ 
   width: 100%;
 }
 
 #a {
   height: 75px;
+}
+
+.deck.flex-container div{
+  height:250px;
+  width: 240px;
+  float: left;
 }
 
 #b {
@@ -29,13 +37,17 @@ div{
 }
 
 @media only screen and (min-width: 768px) {
+* {
+  box-sizing: border-box;
+}
 body {
-  width: 990px;
+  min-width: 960px;
+  max-width: 960px;
 }
   .deck.flex-container{
       display: block;
     }
-
+  
     #a{
       width: 960;
       height: 100;
@@ -50,27 +62,22 @@ body {
     }
 
     #c{
-      /* display: inline-block; */
       float: left;
-      /* margin-left:200px; */
       width: 380px;
       height: 200px;
     }
 
     #d{
-      /* display: inline-block; */
       float: left;
-      /* display: inline; */
-      /* margin-left: 580px; */
       width: 380px;
       height: 200px;
+      white-space: nowrap;
     }
     section.deck.flex-container div{
-      /* display: inline-block; */
       width: 190px;
       height: 250px;
       float: left;
-      border: 1px solid hotpink;
+      border: 1px solid grey;
     }
     
     #i {
