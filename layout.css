@@ -2,8 +2,10 @@
 .deck.flex-container{
   /* display: flex;
   flex-direction: row; */
-  float: right;
+  float: left;
   height: 250px;
+  width: 100%;
+
 }
 
 div{ 
@@ -16,8 +18,9 @@ div{
 
 .deck.flex-container div{
   height:250px;
-  width: 240px;
+  width: 50%;
   float: left;
+  
 }
 
 #b {
@@ -34,6 +37,8 @@ div{
 
 #i {
   height: 80px;
+  float: left;
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,6 +51,7 @@ body {
 }
   .deck.flex-container{
       display: block;
+      width: 380px;
     }
   
     #a{
